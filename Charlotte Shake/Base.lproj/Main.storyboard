@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Charlotte_Shake" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9J-YK-ftN">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcJ-Dh-8tz">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="G1h-3w-TOo"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Shake to get some Charlotte" id="ITi-2U-T3H"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K9J-YK-ftN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5uF-Gx-reU"/>
+                            <constraint firstItem="gcJ-Dh-8tz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="C7G-1E-j1b"/>
+                            <constraint firstItem="K9J-YK-ftN" firstAttribute="top" secondItem="gcJ-Dh-8tz" secondAttribute="bottom" id="aAH-QG-den"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K9J-YK-ftN" secondAttribute="trailing" constant="-20" id="bTb-8H-T0V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gcJ-Dh-8tz" secondAttribute="trailing" constant="-20" id="hyA-nj-Oj5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K9J-YK-ftN" secondAttribute="bottom" id="qYg-0t-6Sp"/>
+                            <constraint firstItem="gcJ-Dh-8tz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="r63-Yb-6oC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photo" destination="K9J-YK-ftN" id="74M-fr-sao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242.5" y="382.5"/>
+        </scene>
+    </scenes>
+</document>
